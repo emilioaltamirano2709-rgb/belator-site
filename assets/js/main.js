@@ -1,224 +1,176 @@
-/* ========= Datos de programas =========
-   - Edita fechas/lugares/talleres aquí sin tocar el HTML
-*/
-const PROGRAMAS = {
-  bienestar: {
-    nombre: "Seguridad del bienestar comunitario",
-    img: "assets/img/bienestar.png.png",
-    resumen:
-      "Promueve el bienestar integral con talleres de autocuidado, manejo del estrés y herramientas para una vida saludable.",
-    talleres: [
-      {
-        titulo: "Autocuidado y salud integral",
-        objetivo:
-          "Promueve prácticas de bienestar físico, mental y social con énfasis en herramientas personales de autocuidado.",
-      },
-      {
-        titulo: "Consciencia plena frente a situaciones de estrés",
-        objetivo:
-          "Introduce técnicas de mindfulness para manejar el estrés en contextos cotidianos y de emergencia.",
-      },
-      {
-        titulo: "Consciencia plena frente a situaciones de estrés NNA",
-        objetivo:
-          "Aplicación de mindfulness para NNA en contextos cotidianos y de emergencia.",
-      },
-    ],
+// ====== DATA DE CURSOS (puedes editar libremente) ======
+const COURSES = {
+  "autocuidado": {
+    title: "Autocuidado y salud integral",
+    desc: "Promueve prácticas de bienestar físico, mental y social, con énfasis en el desarrollo de herramientas personales de autocuidado.",
     fechas: [
-      { fecha: "Sáb 30 Nov, 10:00", lugar: "Sede Vecinal René Schneider" },
-      { fecha: "Mié 04 Dic, 18:30", lugar: "Centro Comunitario La Esperanza" },
-    ],
+      { id:"a1", place:"Sede Centro",  iso:"2025-12-05T18:00:00-03:00" },
+      { id:"a2", place:"Sede Norte",   iso:"2025-12-12T10:00:00-03:00" },
+      { id:"a3", place:"Online",       iso:"2026-01-15T19:00:00-03:00" }
+    ]
   },
-
-  empoderamiento: {
-    nombre: "Seguridad del empoderamiento comunitario",
-    img: "assets/img/empoderamiento.png.png",
-    resumen:
-      "Fortalece capacidades para la participación activa, organización social y liderazgo comunitario.",
-    talleres: [
-      {
-        titulo: "Respuesta comunitaria frente a emergencias",
-        objetivo:
-          "Desarrolla la capacidad de organizarse y responder ante desastres naturales u otras contingencias.",
-      },
-      {
-        titulo: "Orientaciones en primeros auxilios psicológicos",
-        objetivo:
-          "Herramientas para apoyo emocional en crisis (técnica A-B-C-D-E de la PUC).",
-      },
-    ],
+  "estres": {
+    title: "Consciencia plena frente a situaciones de estrés",
+    desc: "Introduce técnicas de mindfulness para manejar el estrés en contextos cotidianos y de emergencia.",
     fechas: [
-      { fecha: "Jue 05 Dic, 19:00", lugar: "Junta de Vecinos Vista al Mar" },
-      { fecha: "Sáb 14 Dic, 11:00", lugar: "Colegio San Agustín (Gimnasio)" },
-    ],
+      { id:"e1", place:"Sede Centro", iso:"2025-12-07T18:30:00-03:00" },
+      { id:"e2", place:"Online",      iso:"2025-12-20T09:00:00-03:00" }
+    ]
   },
-
-  medioambiental: {
-    nombre: "Seguridad medioambiental",
-    img: "assets/img/medioambiental.png.png",
-    resumen:
-      "Educación ambiental, prácticas responsables y economía circular para fortalecer la conciencia ecológica.",
-    talleres: [
-      {
-        titulo: "Sostenibilidad y economía circular",
-        objetivo:
-          "Promueve prácticas sostenibles con conceptos y ejemplos aplicables a la vida comunitaria y cotidiana.",
-      },
-    ],
+  "estres-nna": {
+    title: "Consciencia plena frente a situaciones de estrés (NNA)",
+    desc: "Mindfulness para niñas, niños y adolescentes en contextos cotidianos y de emergencia.",
     fechas: [
-      { fecha: "Vie 29 Nov, 17:30", lugar: "Biblioteca Municipal" },
-      { fecha: "Mié 11 Dic, 18:00", lugar: "Parque Comunal (Sala multiuso)" },
-    ],
+      { id:"en1", place:"Escuela A", iso:"2025-12-14T11:00:00-03:00" },
+      { id:"en2", place:"Online",    iso:"2026-01-10T17:30:00-03:00" }
+    ]
   },
-
-  arteterapia: {
-    nombre: "Programa especial: Arteterapia (Historias bordadas)",
-    img: "assets/img/arteterapia.png.png",
-    resumen:
-      "Expresión y empoderamiento personal a través del bordado e historias bordadas.",
-    talleres: [
-      {
-        titulo: "Historias bordadas",
-        objetivo:
-          "5 sesiones (1.5h c/u) para desarrollar arpilleras personales, explorando historia, identidad y trabajo colectivo.",
-      },
-    ],
+  "emergencias": {
+    title: "Respuesta comunitaria frente a emergencias",
+    desc: "Fortalece la capacidad de las comunidades para organizarse y responder ante desastres naturales u otras contingencias.",
     fechas: [
-      { fecha: "Mar 03 Dic, 18:30", lugar: "Casa de la Cultura" },
-      { fecha: "Mar 10 Dic, 18:30", lugar: "Casa de la Cultura" },
-    ],
+      { id:"r1", place:"Sede Sur",  iso:"2025-12-03T18:30:00-03:00" },
+      { id:"r2", place:"Online",    iso:"2026-01-08T19:00:00-03:00" }
+    ]
   },
+  "pap-abcde": {
+    title: "Orientaciones en primeros auxilios psicológicos",
+    desc: "Brinda herramientas para apoyar emocionalmente a personas en crisis, desde la técnica A-B-C-D-E.",
+    fechas: [
+      { id:"p1", place:"Sede Centro", iso:"2025-12-18T18:00:00-03:00" },
+      { id:"p2", place:"Online",      iso:"2026-01-22T18:30:00-03:00" }
+    ]
+  },
+  "sostenibilidad": {
+    title: "Sostenibilidad y economía circular",
+    desc: "Promueve prácticas sostenibles con conceptos y ejemplos aplicables a la vida comunitaria y cotidiana.",
+    fechas: [
+      { id:"s1", place:"Sede Centro", iso:"2025-12-11T18:00:00-03:00" },
+      { id:"s2", place:"Online",      iso:"2026-01-17T10:00:00-03:00" }
+    ]
+  },
+  "historias": {
+    title: "Historias bordadas",
+    desc: "Expresión artística y empoderamiento personal a través del bordado, inspirado en la tradición de las arpilleras chilenas.",
+    fechas: [
+      { id:"h1", place:"Taller Bellas Artes", iso:"2025-12-09T17:30:00-03:00" },
+      { id:"h2", place:"Online",             iso:"2026-01-24T18:30:00-03:00" }
+    ]
+  }
 };
 
-/* ========= Utilidades DOM ========= */
-const $  = (sel, ctx=document) => ctx.querySelector(sel);
-const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
+// ====== UTIL ======
+const fmtFecha = (iso) => {
+  try{
+    const dt = new Date(iso);
+    return dt.toLocaleString("es-CL", {
+      dateStyle:"full",
+      timeStyle:"short",
+      timeZone: "America/Santiago"
+    });
+  }catch(e){
+    return iso;
+  }
+};
 
-/* ========= Modal Detalles ========= */
-const modal    = $("#detalleModal");
-const mImg     = $("#detalleImg");
-const mTitulo  = $("#detalleTitulo");
-const mResumen = $("#detalleResumen");
-const mTalleres= $("#detalleTalleres");
-const mFechas  = $("#detalleFechas");
+// ====== MODAL DETALLES ======
+const modal = document.getElementById('courseModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalDesc  = document.getElementById('modalDesc');
+const ulFechas   = document.getElementById('modalFechas');
 
-function openModal(){ modal.setAttribute("aria-hidden","false"); }
-function closeModal(){ modal.setAttribute("aria-hidden","true"); }
-modal.addEventListener("click", e => { if (e.target.dataset.close) closeModal(); });
+const openModal = () => modal.classList.add('show');
+const closeModal = () => modal.classList.remove('show');
 
-/* Rellena modal con info del programa */
-function showDetalles(key){
-  const p = PROGRAMAS[key];
-  if(!p) return;
+modal.addEventListener('click', (ev)=>{
+  if (ev.target.dataset.close === 'modal') closeModal();
+});
 
-  mImg.src = p.img;
-  mImg.alt = p.nombre;
-  mTitulo.textContent = p.nombre;
-  mResumen.textContent = p.resumen;
+// Attach listeners a todos los botones "Ver detalles"
+document.querySelectorAll('.ver-detalles').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const id = btn.closest('.card').dataset.courseId;
+    const c = COURSES[id];
+    if(!c) return;
 
-  // talleres
-  mTalleres.innerHTML = "";
-  p.talleres.forEach(t => {
-    const li = document.createElement("li");
-    li.innerHTML = `<strong>${t.titulo}:</strong> ${t.objetivo}`;
-    mTalleres.appendChild(li);
-  });
+    modalTitle.textContent = c.title;
+    modalDesc.textContent  = c.desc;
 
-  // fechas
-  mFechas.innerHTML = "";
-  p.fechas.forEach(f => {
-    const row = document.createElement("div");
-    row.className = "fecha";
-    row.innerHTML = `
-      <div>
-        <div class="meta">${f.fecha}</div>
-        <div class="place">${f.lugar}</div>
-      </div>
-      <button class="btn btn-primary" data-insc="${key}" data-fecha="${f.fecha}" data-lugar="${f.lugar}">
-        Inscribirme
-      </button>
-    `;
-    mFechas.appendChild(row);
-  });
+    // Render fechas
+    ulFechas.innerHTML = '';
+    c.fechas.forEach(f=>{
+      const li = document.createElement('li');
+      li.className = 'fecha';
+      li.innerHTML = `
+        <div>
+          <div class="badge">${f.place}</div>
+          <div>${fmtFecha(f.iso)}</div>
+        </div>
+        <button class="btn btn-primary" data-insc='${id}::${f.id}'>Inscribirme</button>
+      `;
+      ulFechas.appendChild(li);
+    });
 
-  openModal();
-}
-
-/* Botones "Ver detalles" */
-$$(".card .btn").forEach(btn=>{
-  btn.addEventListener("click", e => {
-    const key = e.currentTarget.dataset.programa;
-    showDetalles(key);
+    openModal();
   });
 });
 
-/* ========= Drawer de Inscripción ========= */
-const drawer = $("#inscripcion");
-const inscPrograma = $("#inscPrograma");
-const inscFecha = $("#inscFecha");
-const inscResumen = $("#inscResumen");
+// ====== DRAWER (Inscripción) ======
+const drawer = document.getElementById('drawer');
+const openDrawer  = () => drawer.classList.add('open');
+const closeDrawer = () => drawer.classList.remove('open');
 
-function openDrawer(){ drawer.setAttribute("aria-hidden","false"); }
-function closeDrawer(){ drawer.setAttribute("aria-hidden","true"); }
+document.querySelectorAll('[data-close="drawer"]').forEach(x=>x.addEventListener('click', closeDrawer));
+document.querySelectorAll('[data-close="modal"]').forEach(x=>x.addEventListener('click', closeModal));
 
-drawer.addEventListener("click", e => {
-  if (e.target.dataset.drawerClose) closeDrawer();
-});
-
-/* Delegación: click en "Inscribirme" dentro del modal */
-mFechas.addEventListener("click", e=>{
-  const btn = e.target.closest("button[data-insc]");
+// Delegación: click en botón "Inscribirme" dentro del modal
+ulFechas.addEventListener('click', (ev)=>{
+  const btn = ev.target.closest('button[data-insc]');
   if(!btn) return;
-  const key   = btn.dataset.insc;
-  const fecha = btn.dataset.fecha;
-  const lugar = btn.dataset.lugar;
-  const p     = PROGRAMAS[key];
+  const [cid, fid] = btn.dataset.insc.split('::');
+  const curso = COURSES[cid];
+  const fecha = curso?.fechas.find(f=>f.id===fid);
 
-  inscPrograma.value = p.nombre;
-  inscFecha.value    = `${fecha} — ${lugar}`;
-  inscResumen.textContent = `${p.nombre} · ${fecha} · ${lugar}`;
-
-  openDrawer();
+  if(curso && fecha){
+    document.getElementById('inscCurso').value = curso.title;
+    document.getElementById('inscFecha').value = `${fecha.place} — ${fmtFecha(fecha.iso)}`;
+    openDrawer();
+  }
 });
 
-/* ========= Envío: mailto pre-llenado =========
-   Cambia el correo del coordinador aquí:
-*/
-const COORDINADOR_EMAIL = "coordinacion@fundacionbelator.cl";
+// Envío de formulario (abre correo por mailto:)
+document.getElementById('inscForm').addEventListener('submit', (ev)=>{
+  ev.preventDefault();
 
-$("#formInsc").addEventListener("submit", (e)=>{
-  e.preventDefault();
+  const curso = document.getElementById('inscCurso').value;
+  const fecha = document.getElementById('inscFecha').value;
+  const nombre= document.getElementById('inscNombre').value.trim();
+  const correo= document.getElementById('inscCorreo').value.trim();
+  const fono  = document.getElementById('inscFono').value.trim();
+  const inst  = document.getElementById('inscInst').value.trim();
+  const msg   = document.getElementById('inscMsg').value.trim();
 
-  const nombre = $("#inscNombre").value.trim();
-  const email  = $("#inscEmail").value.trim();
-  const fono   = $("#inscFono").value.trim();
-  const inst   = $("#inscInst").value.trim();
-  const msg    = $("#inscMsg").value.trim();
-  const prog   = inscPrograma.value;
-  const fecha  = inscFecha.value;
-
-  // Construimos correo
-  const subject = encodeURIComponent(`Inscripción · ${prog} · ${nombre}`);
+  const to = "coordinacion@fundacionbelator.cl"; // <- cámbialo si corresponde
+  const subject = encodeURIComponent(`Inscripción: ${curso} (${fecha})`);
   const body = encodeURIComponent(
-`Hola equipo Belator,
+`Curso: ${curso}
+Fecha: ${fecha}
 
-Deseo inscribirme en:
-• Programa: ${prog}
-• Fecha/lugar: ${fecha}
+Nombre: ${nombre}
+Correo: ${correo}
+Teléfono: ${fono}
+Institución: ${inst}
 
-Mis datos:
-• Nombre: ${nombre}
-• Correo: ${email}
-• Teléfono: ${fono || "-"}
-• Institución: ${inst || "-"}
+Comentarios:
+${msg}
+`
+  );
 
-Mensaje adicional:
-${msg || "-"}
-`);
+  // Abre el cliente de correo del usuario:
+  const mailto = `mailto:${to}?subject=${subject}&body=${body}`;
+  window.location.href = mailto;
 
-  window.location.href = `mailto:${COORDINADOR_EMAIL}?subject=${subject}&body=${body}`;
-
-  // cierres de UI
-  closeDrawer();
-  closeModal();
+  // Cierre visual
+  closeDrawer(); closeModal();
+  alert("Se abrirá tu correo para enviar la inscripción. Si no se abrió, revisa el bloqueador de ventanas emergentes.");
 });

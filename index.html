@@ -4,212 +4,271 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fundación Belator</title>
-  <link rel="icon" href="assets/img/logo-belator.png.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- Header / Nav -->
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#top">
-        <img src="assets/img/logo-belator.png.png" alt="Logo Fundación Belator" />
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <div class="brand">
+        <img src="assets/img/logo-belator.png" alt="Fundación Belator" />
         <span>Fundación Belator</span>
-      </a>
-
+      </div>
       <nav class="nav">
         <a href="#quienes">Quiénes somos</a>
-        <a href="#porque">¿Por qué lo hacemos?</a>
+        <a href="#por-que">Por qué lo hacemos</a>
         <a href="#valores">Nuestros valores</a>
         <a href="#programas">Programas</a>
-        <a class="cta" href="#contacto">Contacto</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="top" class="hero">
+  <section class="hero">
     <div class="wrap">
-      <h1>Tejiendo redes de protección, seguridad y cuidado</h1>
-      <p class="sub">Construimos alianzas de apoyo solidarias, eficientes y seguras.</p>
-      <a href="#programas" class="btn btn-primary">Ver Programas</a>
+      <h1>Construimos alianzas de apoyo solidarias, eficientes y seguras.</h1>
+      <p>Abordamos la seguridad humana con enfoque comunitario, equidad de género y prácticas sostenibles.</p>
     </div>
   </section>
 
-  <!-- Quiénes somos -->
-  <section id="quienes" class="section">
-    <div class="wrap">
-      <h2>¿Quiénes somos?</h2>
-      <p>
-        Somos una organización sin fines de lucro del Grupo Belator. Nuestro pilar
-        fundamental es desarrollar la seguridad humana a través de la equidad de
-        género como eje transversal y mediante prácticas sostenibles.
-      </p>
-    </div>
+  <section id="quienes" class="wrap info">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos una organización sin fines de lucro del Grupo Belator. Nuestro pilar es desarrollar la seguridad humana con enfoque de equidad de género como eje transversal y mediante prácticas sostenibles.</p>
   </section>
 
-  <!-- Por qué lo hacemos -->
-  <section id="porque" class="section alt">
-    <div class="wrap">
-      <h2>¿Por qué lo hacemos?</h2>
-      <p>Para fortalecer la sensación de seguridad y que las personas puedan existir sin temor.</p>
-    </div>
+  <section id="por-que" class="wrap info">
+    <h2>¿Por qué lo hacemos?</h2>
+    <p>Para fortalecer la sensación de seguridad para que las personas puedan existir sin temor.</p>
   </section>
 
-  <!-- Nuestros valores -->
-  <section id="valores" class="section">
-    <div class="wrap">
-      <h2>Nuestros valores</h2>
-      <div class="values">
-        <article class="value">
-          <h3>Calidad de vida</h3>
-          <p>Servicios y programas basados en el respeto y la confianza con la comunidad.</p>
+  <section id="valores" class="wrap valores">
+    <h2>Nuestros Valores</h2>
+    <ul class="values">
+      <li>
+        <strong>Calidad de vida</strong>
+        <span>Acompañamiento con respeto y confianza.</span>
+      </li>
+      <li>
+        <strong>Consciencia social</strong>
+        <span>Desarrollo personal y comunitario con trabajos en terreno.</span>
+      </li>
+      <li>
+        <strong>Participación sostenida</strong>
+        <span>Apoyo constante a la organización social y comunitaria.</span>
+      </li>
+      <li>
+        <strong>Formación de excelencia</strong>
+        <span>Equipo de alto compromiso y preparación.</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- PROGRAMAS / CURSOS -->
+  <section id="programas" class="wrap programas">
+    <h2>Programas de Seguridad Humana</h2>
+
+    <!-- Bienestar comunitario -->
+    <div class="program">
+      <div class="program__head">
+        <img src="assets/img/bienestar.png" alt="Bienestar comunitario" />
+        <div>
+          <h3>Programa de Seguridad del bienestar comunitario</h3>
+          <p>Promueve el bienestar integral mediante talleres de autocuidado, manejo del estrés y herramientas para una vida saludable.</p>
+        </div>
+      </div>
+
+      <div class="grid-cursos">
+        <article class="card" data-course-id="autocuidado">
+          <h4>Autocuidado y salud integral</h4>
+          <p class="small">Objetivo: promover prácticas de bienestar físico, mental y social, con énfasis en herramientas de autocuidado.</p>
+          <button class="btn ver-detalles">Ver detalles</button>
         </article>
-        <article class="value">
-          <h3>Consciencia social</h3>
-          <p>Seguridad y desarrollo personal/comunitario con trabajo en terreno.</p>
+
+        <article class="card" data-course-id="estres">
+          <h4>Consciencia plena frente a situaciones de estrés</h4>
+          <p class="small">Objetivo: introducir técnicas de mindfulness para manejar el estrés en contextos cotidianos y de emergencia.</p>
+          <button class="btn ver-detalles">Ver detalles</button>
         </article>
-        <article class="value">
-          <h3>Participación sostenida</h3>
-          <p>Acompañamiento constante en procesos de participación y seguridad comunitaria.</p>
-        </article>
-        <article class="value">
-          <h3>Formación de excelencia</h3>
-          <p>Equipo con alto nivel de formación y compromiso para garantizar nuestras líneas de acción.</p>
+
+        <article class="card" data-course-id="estres-nna">
+          <h4>Consciencia plena frente a situaciones de estrés (NNA)</h4>
+          <p class="small">Objetivo: mindfulness para NNA en contextos cotidianos y de emergencia.</p>
+          <button class="btn ver-detalles">Ver detalles</button>
         </article>
       </div>
     </div>
-  </section>
 
-  <!-- Programas -->
-  <section id="programas" class="section alt">
-    <div class="wrap">
-      <h2>Programas de Seguridad Humana</h2>
+    <!-- Empoderamiento comunitario -->
+    <div class="program">
+      <div class="program__head">
+        <img src="assets/img/empoderamiento.png" alt="Empoderamiento comunitario" />
+        <div>
+          <h3>Programa de seguridad del empoderamiento comunitario</h3>
+          <p>Fortalece capacidades individuales y colectivas para participación activa, organización social y liderazgo comunitario.</p>
+        </div>
+      </div>
 
-      <div class="grid-programas">
-        <!-- Bienestar comunitario -->
-        <article class="card">
-          <img src="assets/img/bienestar.png.png" alt="Bienestar comunitario" loading="lazy">
-          <h3>Seguridad del bienestar comunitario</h3>
-          <p>
-            Promover el bienestar integral mediante talleres de autocuidado, manejo del estrés
-            y herramientas para una vida saludable.
-          </p>
-          <button class="btn" data-programa="bienestar">Ver detalles</button>
+      <div class="grid-cursos">
+        <article class="card" data-course-id="emergencias">
+          <h4>Respuesta comunitaria frente a emergencias</h4>
+          <p class="small">Objetivo: organizar y responder ante desastres y contingencias.</p>
+          <button class="btn ver-detalles">Ver detalles</button>
         </article>
 
-        <!-- Empoderamiento comunitario -->
-        <article class="card">
-          <img src="assets/img/empoderamiento.png.png" alt="Empoderamiento comunitario" loading="lazy">
-          <h3>Seguridad del empoderamiento comunitario</h3>
-          <p>
-            Fortalecer capacidades para participación activa, organización social y liderazgo
-            comunitario para gestionar procesos de transformación.
-          </p>
-          <button class="btn" data-programa="empoderamiento">Ver detalles</button>
+        <article class="card" data-course-id="pap-abcde">
+          <h4>Orientaciones en primeros auxilios psicológicos</h4>
+          <p class="small">Objetivo: herramientas para apoyo emocional en crisis, desde la técnica A-B-C-D-E.</p>
+          <button class="btn ver-detalles">Ver detalles</button>
         </article>
+      </div>
+    </div>
 
-        <!-- Medioambiental -->
-        <article class="card">
-          <img src="assets/img/medioambiental.png.png" alt="Seguridad medioambiental" loading="lazy">
-          <h3>Seguridad medioambiental</h3>
-          <p>
-            Educación ambiental, prácticas responsables y economía circular para fortalecer
-            la conciencia ecológica y la corresponsabilidad comunitaria.
-          </p>
-          <button class="btn" data-programa="medioambiental">Ver detalles</button>
+    <!-- Medioambiental -->
+    <div class="program">
+      <div class="program__head">
+        <img src="assets/img/medioambiental.png" alt="Seguridad medioambiental" />
+        <div>
+          <h3>Programa de seguridad medioambiental</h3>
+          <p>Protección y sostenibilidad del entorno mediante educación ambiental y fomento de la economía circular.</p>
+        </div>
+      </div>
+
+      <div class="grid-cursos">
+        <article class="card" data-course-id="sostenibilidad">
+          <h4>Sostenibilidad y economía circular</h4>
+          <p class="small">Objetivo: prácticas sostenibles con conceptos y ejemplos aplicables a la vida comunitaria.</p>
+          <button class="btn ver-detalles">Ver detalles</button>
         </article>
+      </div>
+    </div>
 
-        <!-- Arteterapia (especial) -->
-        <article class="card">
-          <img src="assets/img/arteterapia.png.png" alt="Arteterapia: Historias bordadas" loading="lazy">
+    <!-- Especial: Arteterapia -->
+    <div class="program">
+      <div class="program__head">
+        <img src="assets/img/arteterapia.png" alt="Arteterapia" />
+        <div>
           <h3>Programa especial: Arteterapia</h3>
-          <p>
-            Expresión y empoderamiento personal a través del bordado e historias bordadas.
-          </p>
-          <button class="btn" data-programa="arteterapia">Ver detalles</button>
+          <p>Expresión y empoderamiento personal a través del bordado, inspirado en la tradición de las arpilleras.</p>
+        </div>
+      </div>
+
+      <div class="grid-cursos">
+        <article class="card" data-course-id="historias">
+          <h4>Historias bordadas</h4>
+          <p class="small">Objetivo: promover la expresión artística y el desarrollo personal.</p>
+          <button class="btn ver-detalles">Ver detalles</button>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Contacto simple (pie) -->
-  <footer id="contacto" class="site-footer">
-    <div class="wrap footer-inner">
-      <p>© Fundación Belator</p>
-      <a class="btn btn-outline" href="#top">Volver arriba</a>
-    </div>
-  </footer>
+  <!-- MODAL DETALLES -->
+  <div id="courseModal" class="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close="modal"></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close="modal" aria-label="Cerrar">×</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc" class="modal__desc"></p>
 
-  <!-- Modal Detalles (se rellena por JS) -->
-  <div id="detalleModal" class="modal" aria-hidden="true">
-    <div class="modal__backdrop" data-close="true"></div>
-    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="detalleTitulo">
-      <button class="modal__close" data-close="true" aria-label="Cerrar">×</button>
-      <div class="modal__content">
-        <header class="modal__head">
-          <img id="detalleImg" src="" alt="" />
-          <h3 id="detalleTitulo"></h3>
-          <p id="detalleResumen" class="muted"></p>
-        </header>
+      <h4>Próximas fechas</h4>
+      <ul id="modalFechas" class="fechas"></ul>
 
-        <section class="modal__block">
-          <h4>Talleres y objetivos</h4>
-          <ul id="detalleTalleres" class="bullets"></ul>
-        </section>
-
-        <section class="modal__block">
-          <h4>Próximas fechas</h4>
-          <div id="detalleFechas" class="fechas"></div>
-          <p class="hint">Selecciona una fecha para inscribirte.</p>
-        </section>
-      </div>
+      <p class="muted small">
+        * Si no ves una fecha que te acomode, contáctanos para programar nuevas convocatorias.
+      </p>
     </div>
   </div>
 
-  <!-- Drawer Inscripción (slide) -->
-  <aside id="inscripcion" class="drawer" aria-hidden="true">
-    <div class="drawer__panel">
-      <button class="drawer__close" data-drawer-close="true" aria-label="Cerrar">×</button>
-      <h3>Inscripción</h3>
-      <p id="inscResumen" class="muted"></p>
-
-      <form id="formInsc" class="form">
-        <input type="hidden" name="programa" id="inscPrograma">
-        <input type="hidden" name="fecha" id="inscFecha">
-
-        <label>
-          Nombre completo
-          <input type="text" id="inscNombre" required placeholder="Tu nombre y apellido">
-        </label>
-
-        <label>
-          Correo electrónico
-          <input type="email" id="inscEmail" required placeholder="nombre@correo.cl">
-        </label>
-
-        <label>
-          Teléfono
-          <input type="tel" id="inscFono" placeholder="+569 XXXXXXXX">
-        </label>
-
-        <label>
-          Institución
-          <input type="text" id="inscInst" placeholder="(Opcional)">
-        </label>
-
-        <label>
-          Mensaje
-          <textarea id="inscMsg" rows="4" placeholder="Cuéntanos algo breve (opcional)"></textarea>
-        </label>
-
-        <button class="btn btn-primary" type="submit">Enviar inscripción</button>
-        <p class="tiny muted">
-          * GitHub Pages no envía correos por sí mismo. Este botón abrirá tu cliente de correo con un mensaje pre-llenado (mailto).
-        </p>
-      </form>
+  <!-- DRAWER INSCRIPCIÓN -->
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer__head">
+      <strong>Inscripción</strong>
+      <button class="drawer__close" data-close="drawer" aria-label="Cerrar">×</button>
     </div>
-    <div class="drawer__backdrop" data-drawer-close="true"></div>
+    <form id="inscForm" class="form">
+      <div class="form__row">
+        <label>Curso</label>
+        <input type="text" id="inscCurso" readonly>
+      </div>
+      <div class="form__row">
+        <label>Fecha</label>
+        <input type="text" id="inscFecha" readonly>
+      </div>
+      <div class="form__row">
+        <label>Nombre completo</label>
+        <input type="text" id="inscNombre" required>
+      </div>
+      <div class="form__row">
+        <label>Correo electrónico</label>
+        <input type="email" id="inscCorreo" required>
+      </div>
+      <div class="form__row">
+        <label>Teléfono</label>
+        <input type="tel" id="inscFono" placeholder="+56 9 XXXXXXXX" required>
+      </div>
+      <div class="form__row">
+        <label>Institución (opcional)</label>
+        <input type="text" id="inscInst">
+      </div>
+      <div class="form__row">
+        <label>Comentarios (opcional)</label>
+        <textarea id="inscMsg" rows="3"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Confirmar inscripción</button>
+      <p class="muted small">Al enviar, se abrirá tu correo para confirmar la inscripción por email.</p>
+    </form>
   </aside>
+
+  <!-- CONTACTO + EQUIPO -->
+  <footer id="contacto" class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <h3>Contacto</h3>
+        <form class="form" action="mailto:coordinacion@fundacionbelator.cl" method="post" enctype="text/plain">
+          <div class="form__row">
+            <input name="nombre" type="text" placeholder="Nombre Completo" required />
+          </div>
+          <div class="form__row">
+            <input name="email" type="email" placeholder="Correo Electrónico" required />
+          </div>
+          <div class="form__row">
+            <input name="fono" type="tel" placeholder="+56 9 XXXXXXXX" />
+          </div>
+          <div class="form__row">
+            <input name="institucion" type="text" placeholder="Institución" />
+          </div>
+          <div class="form__row">
+            <textarea name="mensaje" rows="4" placeholder="Ingrese su mensaje"></textarea>
+          </div>
+          <button class="btn">Enviar</button>
+        </form>
+      </div>
+
+      <div>
+        <h3>Equipo</h3>
+        <ul class="team">
+          <li>
+            <strong>Dirección Ejecutiva</strong><br>
+            <span>Dannae Ramirez Romero</span><br>
+            <a href="mailto:direccion@fundacionbelator.cl">direccion@fundacionbelator.cl</a>
+          </li>
+          <li>
+            <strong>Encargada de servicios y vinculación</strong><br>
+            <span>Mariela Daza Ruiz</span><br>
+            <a href="mailto:programas@fundacionbelator.cl">programas@fundacionbelator.cl</a>
+          </li>
+          <li>
+            <strong>Contacto general</strong><br>
+            <a href="mailto:coordinacion@fundacionbelator.cl">coordinacion@fundacionbelator.cl</a><br>
+            <span>+56 9 9540 0506</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap footer__bottom">
+      <p>© Fundación Belator</p>
+    </div>
+  </footer>
 
   <script src="assets/js/main.js"></script>
 </body>
